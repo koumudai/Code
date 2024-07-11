@@ -202,6 +202,7 @@ class DatasetTemplate(torch_data.Dataset):
             if data_dict.get('gt_boxes2d', None) is not None:
                 data_dict['gt_boxes2d'] = data_dict['gt_boxes2d'][selected]
 
+
         if data_dict.get('points', None) is not None:
             data_dict = self.point_feature_encoder.forward(data_dict)
 

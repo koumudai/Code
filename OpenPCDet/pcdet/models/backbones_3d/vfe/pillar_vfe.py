@@ -92,8 +92,9 @@ class PillarVFE(VFETemplate):
         return paddings_indicator
 
     def forward(self, batch_dict, **kwargs):
-  
+        # dict_keys(['frame_id', 'gt_boxes', 'points', 'flip_x', 'noise_rot', 'noise_scale', 'lidar_aug_matrix', 'use_lead_xyz', 'voxels', 'voxel_coords', 'voxel_num_points', 'image_shape', 'batch_size'])
         voxel_features, voxel_num_points, coords = batch_dict['voxels'], batch_dict['voxel_num_points'], batch_dict['voxel_coords']
+ 
         points_mean = voxel_features[:, :, :3].sum(dim=1, keepdim=True) / voxel_num_points.type_as(voxel_features).view(-1, 1, 1)
         f_cluster = voxel_features[:, :, :3] - points_mean
 
