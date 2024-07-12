@@ -65,6 +65,7 @@ def parse_config():
     return args, cfg
 
 
+
 def main():
     args, cfg = parse_config()
     if args.launcher == 'none':
@@ -121,7 +122,8 @@ def main():
         dataset_cfg=cfg.DATA_CONFIG,
         class_names=cfg.CLASS_NAMES,
         batch_size=args.batch_size,
-        dist=dist_train, workers=args.workers,
+        dist=dist_train,
+        workers=args.workers,
         logger=logger,
         training=True,
         merge_all_iters_to_one_epoch=args.merge_all_iters_to_one_epoch,
