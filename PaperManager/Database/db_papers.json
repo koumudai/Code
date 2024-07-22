@@ -1,6 +1,6 @@
 {
     "glb": {
-        "label_num": 20,
+        "label_num": 23,
         "paper_num": 45,
         "paper_root_path": "./Database/Papers"
     },
@@ -77,31 +77,46 @@
         },
         {
             "id": 14,
+            "name": "Lidar-based 3D Object Classification",
+            "md5": "03e3be42c4041c171a473137849367f4"
+        },
+        {
+            "id": 15,
             "name": "Lidar-based 3D Object Detection",
             "md5": "b264a34ea570fbe80ad379d6d043fd75"
         },
         {
-            "id": 15,
+            "id": 16,
             "name": "Lidar-based 3D Object Tracking",
             "md5": "78fac8a3dbced3347caf452824954fd7"
         },
         {
-            "id": 16,
+            "id": 17,
+            "name": "Lidar-based 3D Part Segmentation",
+            "md5": "fbff507bdd25ea399547f8b48533c7f7"
+        },
+        {
+            "id": 18,
+            "name": "Lidar-based 3D Scene Segmentation",
+            "md5": "2eccd489cdfa14c5f5cdf0e298c326cc"
+        },
+        {
+            "id": 19,
             "name": "One-stage Object Detection",
             "md5": "2f5cb1c830c7513da26ec19ea92c6072"
         },
         {
-            "id": 17,
+            "id": 20,
             "name": "Self-Distillation Scheme",
             "md5": "5cbac93dca3683b405d4ca90dabb14c8"
         },
         {
-            "id": 18,
+            "id": 21,
             "name": "Sparse Prediction Object Detection",
             "md5": "bca60355456a40eb9620e02974d5dcac"
         },
         {
-            "id": 19,
+            "id": 22,
             "name": "Two-stage Object Detection",
             "md5": "2b870f5d4bc71f243d93b8b4b0a00aa6"
         }
