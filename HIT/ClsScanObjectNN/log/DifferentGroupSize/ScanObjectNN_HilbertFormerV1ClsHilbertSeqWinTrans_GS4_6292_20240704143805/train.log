@@ -1,0 +1,38 @@
+{'epochs': 300, 'mode': 'train', 'grad_norm_clip': 1, 'experiment': {'exp_root_path': 'log/DifferentGroupSize', 'exp_name': 'ScanObjectNN_HilbertFormerV1ClsHilbertSeqWinTrans_GS4', 'save_file_list': ['main.py', 'build.py', 'datasets.py', 'losses.py', 'utils.py', 'models/HilbertFormerV1Cls.py', 'models/modules/point_utils.py', 'models/modules/model_utils.py', 'models/modules/expansion_utils.py']}, 'dataset': {'common': {'NAME': 'ScanObjectNN', 'data_path': 'data', 'num_points': 1024}, 'train': {'split': 'train'}, 'test': {'split': 'test'}}, 'dataloader': {'train': {'batch_size': 32, 'num_workers': 8}, 'test': {'batch_size': 16, 'num_workers': 8}}, 'model': {'NAME': 'HilbertFormerV1ClsHilbertSeqWinTrans', 'num_cls': 15, 'num_stg': 4, 'dim_stem': 3, 'dim_base': 16, 'dim_expand': 2.0, 'qry_base': 1024, 'qry_expand': 0.5, 'grp_base': 24, 'grp_expand': 1.0, 'blk_dns': [1, 1, 1, 1], 'blk_ens': [1, 1, 1, 1], 'hlb_lvl': [5, 4, 3, 2], 'win_sz': [4, 4, 4, 4], 'ratio': 1.0, 'drop': 0.0, 'norm_name': 'BN', 'act_name': 'ReLU', 'linear_args': {'bias': False}, 'norm_args': {'eps': 1e-05, 'momentum': 0.1}, 'act_args': {'inplace': True}}, 'loss': {'NAME': 'SmoothCrossEntropy', 'use_smoothing': True, 'eps': 0.2}, 'optimizer': {'NAME': 'SGD', 'lr': 0.1, 'momentum': 0.9, 'weight_decay': 0.0001, 'nesterov': True}, 'scheduler': {'NAME': 'cos', 'eta_min': 0.002}, 'use_tqdm': True, 'seed': 6292}
+random seed is: 6292
+Using GPU: 0 from 1 devices
+Let's use 1 GPUs!
+Train 0, loss: 2.6951, train oa: 0.1694, train macc: 0.1173
+Test 0, loss: 2.4644, test oa: 0.2349, test macc: 0.1642, best oa: 0.2349, best macc: 0.1642
+Train 1, loss: 2.3385, train oa: 0.3050, train macc: 0.2271
+Test 1, loss: 2.1853, test oa: 0.3664, test macc: 0.2744, best oa: 0.3664, best macc: 0.2744
+Train 2, loss: 2.2097, train oa: 0.3782, train macc: 0.2881
+Test 2, loss: 2.2952, test oa: 0.3085, test macc: 0.2440, best oa: 0.3664, best macc: 0.2744
+Train 3, loss: 2.1416, train oa: 0.4199, train macc: 0.3280
+Test 3, loss: 2.0867, test oa: 0.4296, test macc: 0.3430, best oa: 0.4296, best macc: 0.3430
+Train 4, loss: 2.0925, train oa: 0.4567, train macc: 0.3644
+Test 4, loss: 2.0007, test oa: 0.4792, test macc: 0.3749, best oa: 0.4792, best macc: 0.3749
+Train 5, loss: 2.0430, train oa: 0.4783, train macc: 0.3813
+Test 5, loss: 1.9537, test oa: 0.5073, test macc: 0.4236, best oa: 0.5073, best macc: 0.4236
+Train 6, loss: 2.0017, train oa: 0.5027, train macc: 0.4071
+Test 6, loss: 1.8848, test oa: 0.5375, test macc: 0.4251, best oa: 0.5375, best macc: 0.4251
+Train 7, loss: 1.9549, train oa: 0.5344, train macc: 0.4387
+Test 7, loss: 1.9118, test oa: 0.5281, test macc: 0.4665, best oa: 0.5375, best macc: 0.4665
+Train 8, loss: 1.9165, train oa: 0.5557, train macc: 0.4628
+Test 8, loss: 1.8136, test oa: 0.5857, test macc: 0.4827, best oa: 0.5857, best macc: 0.4827
+Train 9, loss: 1.8838, train oa: 0.5702, train macc: 0.4840
+Test 9, loss: 1.8664, test oa: 0.5475, test macc: 0.4679, best oa: 0.5857, best macc: 0.4827
+Train 10, loss: 1.8457, train oa: 0.6022, train macc: 0.5227
+Test 10, loss: 1.9159, test oa: 0.5510, test macc: 0.5123, best oa: 0.5857, best macc: 0.5123
+Train 11, loss: 1.8086, train oa: 0.6210, train macc: 0.5419
+Test 11, loss: 1.7360, test oa: 0.6423, test macc: 0.5487, best oa: 0.6423, best macc: 0.5487
+Train 12, loss: 1.7639, train oa: 0.6415, train macc: 0.5696
+Test 12, loss: 1.7047, test oa: 0.6430, test macc: 0.5636, best oa: 0.6430, best macc: 0.5636
+Train 13, loss: 1.7556, train oa: 0.6512, train macc: 0.5805
+Test 13, loss: 1.7069, test oa: 0.6558, test macc: 0.5869, best oa: 0.6558, best macc: 0.5869
+Train 14, loss: 1.7291, train oa: 0.6673, train macc: 0.5977
+Test 14, loss: 1.6308, test oa: 0.6842, test macc: 0.6225, best oa: 0.6842, best macc: 0.6225
+Train 15, loss: 1.7100, train oa: 0.6791, train macc: 0.6151
+Test 15, loss: 1.6698, test oa: 0.6613, test macc: 0.6055, best oa: 0.6842, best macc: 0.6225
+Train 16, loss: 1.6899, train oa: 0.6817, train macc: 0.6218
+Test 16, loss: 1.6325, test oa: 0.6808, test macc: 0.6180, best oa: 0.6842, best macc: 0.6225

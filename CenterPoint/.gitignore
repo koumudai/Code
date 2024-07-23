@@ -2,16 +2,15 @@
 **build**
 **egg-info**
 **dist**
+data/
 *.pyc
 venv/
 *.idea/
 *.so
-# *.yaml
+*.yaml
+*.sh 
 *.pth
 *.pkl
 *.zip
 *.bin
-version.py
-ckpt/
-data/
-output/
+.vscode/
