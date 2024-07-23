@@ -11,6 +11,9 @@ pip install -r requirements.txt
 
 pip install openmim
 
+
+
+
 # the problem of missing libcudnn.so.8 
 # https://blog.csdn.net/qq_44703886/article/details/112393149
 

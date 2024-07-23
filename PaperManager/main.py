@@ -154,6 +154,7 @@ if __name__ == "__main__":
     r.new_label("Sparse Prediction Object Detection")
     r.new_label("Knowledge Distillation")
     r.new_label("Self-Distillation Scheme")
+    r.new_label("Intersection over Union Optimization")
 
     BbLb = "Language-based Backbone"
     LLM_ = "Large Language Model"
@@ -178,6 +179,7 @@ if __name__ == "__main__":
     ODSP = "Sparse Prediction Object Detection"
     KD__ = "Knowledge Distillation"
     KDSd = "Self-distillation Scheme"
+    IoUO = "Intersection over Union Optimization"
 
 
     # ----------------------------------------------------------- #
@@ -235,7 +237,9 @@ if __name__ == "__main__":
 
     r.new_paper(method="BEVFormer"          , web="http://arxiv.org/abs/2203.17270"     , title="BEVFormer: Learning Bird's-Eye-View Representation from Multi-Camera Images via Spatiotemporal Transformers"   , label_name_list=[ODCb, MSCb])
 
-
+    r.new_paper(method="GIoU"               , web="http://arxiv.org/abs/1902.09630"     , title="Generalized Intersection over Union: A Metric and A Loss for Bounding Box Regression"                          , label_name_list=[ODIb, IoUO])
+    r.new_paper(method="DIoU/CIoU"          , web="http://arxiv.org/abs/1911.08287"     , title="Distance-IoU Loss: Faster and Better Learning for Bounding Box Regression"                                     , label_name_list=[ODIb, IoUO])
+    
 
 
 
